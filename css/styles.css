@@ -163,3 +163,36 @@ border-radius: 50%;
     font-weight: 600;
     margin-left: 20px;
 }
+@media only screen and (max-width: 1018px) {
+    
+  }
+ 
+  @media only screen and (max-width: 800px) {
+    .box-content{
+        flex-direction: column;
+    }
+    .box-half{
+        width: 100%;
+        margin-top: 3%;
+    }
+    .content-wrapper{
+        flex-direction: column !important;
+    }
+    .sidebar-offer{
+        display: none;
+    }
+    .side-bar{
+        width: 100% !important;
+        margin-left: 0;
+    }
+    .side-bar ul li{
+        margin-left: 0;
+    }
+    .main-content{
+        width: 94%;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
