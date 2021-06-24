@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+        background: #f46b45;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(24, 24, 24);
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .nav-links {
+        display: flex;
+        align-self: center;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .logo-container {
+        padding: 20px;
+    }
+
+    .logo {
+        letter-spacing: 8px;
+    }
+
+    .navlink-container {
+        padding: 20px;
+    }
+
+    .nav-link {
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+    .gender-selection{
+        padding: 20px;
+        align-self: center;
+        
+    }
+    .gender-selection button{
+        background-color: white;
+        height: 40px;
+        width: 90px;
+        border: none;
+        border-radius: 10px;
+        transition: linear 1s;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .product-search{
+        align-self: center;
+        margin: 20px;
+        background-color: white;
+        border-radius: 10px;
+        width: 310px;
+    }
+    .product-search input{
+        outline: none;
+        padding-left: 20px;
+        border: none;
+        background-color: white;
+        height: 40px;    
+        width: 280px;
+        border-radius: 10px;
+    }
+    .left{
+        color: white;
+        transition: linear 0.5s;
+        box-shadow: inset -400px 0 0 0 #252525,0 0 2px #252525 !important;  
+    }
+    .right{
+        color: white;
+        transition: linear 0.5s;
+        box-shadow: inset 400px 0 0 0 #252525,0 0 2px #252525 !important;
+        
+    }
+    .content-wrapper{
+        display: flex;
+    }
+    .side-bar{
+        margin-top: 1%;
+        /*background-color: rgb(236, 236, 236);*/
+        width: 15% !important;    
+        margin-left: 1%;
+        height: fit-content;
+        }
+        .side-bar ul li{
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+            margin-left: 20%;
+        }
+        .side-bar a{
+            padding: 10px;
+        }
+       .sidebar-offer{
+           display: flex;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            height: 200px;
+        }
+    .main-content{
+        margin-top: 2%;
+        width: 80%;
+        margin-left: 3%;
+    }
+    .owl-carousel img{
+      
+        height: 290px ;
+        border-radius: 10px;
+    }
+    .box-content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+    .box-half{
+        background-color: white;
+        width: 49%;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .box-full{
+        background-color: white;
+        width: 100%;
+        border-radius: 10px;
+        padding: 20px; 
+    }
+</style>
+
+<body>
+    <div class="main-wrapper">
+        <div class="nav-bar">
+            <div class="logo-container">
+                <h1 class="logo">RAIO</h1>
+            </div>
+            <div class="gender-selection">
+                <button id="men-button" class="left" onclick="menColor()">Men</button>
+                <button id="women-button" onclick="womenColor()">Women</button>
+            </div>
+            <div class="product-search">
+                <input class="product-search-input" placeholder="Search" type="text">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <ul class="nav-links">
+                <li class="navlink-container"><a class="nav-link" href="#">Login</a></li>
+                <li class="navlink-container"><a class="nav-link" href="#">Explore</a></li>
+            </ul>
+        </div>
+        <div class="content-wrapper">
+                <div class="side-bar">
+                       <ul class="navigation">
+                           <li><i class="fab fa-android fa-2x"></i><a href="#">Trending</a></li>
+                           <li><i class="fas fa-anchor fa-2x"></i><a href="#">New In</a></li>
+                       </ul>
+                       <div class="sidebar-offer">
+                           <img height="60" width="60" src="https://codesign.com.bd/conversations/content/images/2020/03/Sprint-logo-design-Codesign-agency.png" alt="">
+                           <h3>DISCOUNT</h3>
+                           <h6>GET 1000RS OFF! </h6>
+                           <h6>Grab the deal today</h6>
+                       </div>
+                </div>
+                <div class="main-content">
+                    <div class="owl-carousel">
+                        <div><img style="width: 290px;" src="https://images.pexels.com/photos/8266719/pexels-photo-8266719.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                        <div><img style="width: 290px;" src="https://images.pexels.com/photos/6832295/pexels-photo-6832295.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                        <div><img style="width: 290px;" src="https://images.pexels.com/photos/6751203/pexels-photo-6751203.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                        <div><img style="width: 290px;" src="https://images.pexels.com/photos/8266719/pexels-photo-8266719.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                        <div><img style="width: 290px;" src="https://images.pexels.com/photos/6751203/pexels-photo-6751203.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                        <div><img style="width: 290px;" src="https://images.pexels.com/photos/8285483/pexels-photo-8285483.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                      </div>
+                    <div class="box-content">
+                            <div class="box-half">
+                                <p>Vivamus ac sagittis velit, eu pulvinar neque. Praesent rutrum vehicula metus et posuere. Donec et malesuada mauris. Quisque sit amet purus metus. Proin fermentum massa ac sem elementum, eget imperdiet justo ultricies. Nunc posuere metus mauris, at placerat tortor finibus ac. Donec ligula mi, posuere dignissim semper eget, euismod at mi.</p>
+                            </div>
+                            <div class="box-half">
+                                <p>Vivamus ac sagittis velit, eu pulvinar neque. Praesent rutrum vehicula metus et posuere. Donec et malesuada mauris. Quisque sit amet purus metus. Proin fermentum massa ac sem elementum, eget imperdiet justo ultricies. Nunc posuere metus mauris, at placerat tortor finibus ac. Donec ligula mi, posuere dignissim semper eget, euismod at mi.</p>
+                            </div>
+                    </div>
+                    <div class="box-content">
+                        <div class="box-full">
+                            <p>Vivamus ac sagittis velit, eu pulvinar neque. Praesent rutrum vehicula metus et posuere. Donec et malesuada mauris. Quisque sit amet purus metus. Proin fermentum massa ac sem elementum, eget imperdiet justo ultricies. Nunc posuere metus mauris, at placerat tortor finibus ac. Donec ligula mi, posuere dignissim semper eget, euismod at mi. Aenean sit amet nulla finibus, fermentum odio eu, convallis nisl. Pellentesque ullamcorper erat et ante feugiat tincidunt. Nullam nunc magna, malesuada ac purus sed, molestie auctor orci. Ut ornare leo at augue ultricies, non sollicitudin lectus venenatis. Vivamus at arcu lobortis elit varius sodales in quis ante. Nulla dolor diam, sagittis et scelerisque sit amet, dictum sed erat. Nam nisl massa, bibendum id metus quis, pulvinar pharetra sapien. Proin in sodales dolor. Proin ac vulputate mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+                        </div>
+                </div>
+                            
+
+                </div>
+        </div>
+    </div>
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items:3,
+        margin:20,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    autoWidth:true
+    });
+        });
+        function menColor(){
+            var x = document.getElementById('men-button').classList;
+            if(x.length == 0){
+                //document.getElementById('men-button').classList.remove('left');
+                document.getElementById('men-button').classList.add('left');
+                document.getElementById('women-button').classList.remove('right');
+            }
+            else{
+               //document.getElementById('men-button').classList.remove('left');
+            }
+        }
+        function womenColor(){
+            var x = document.getElementById('women-button').classList;
+            if(x.length == 0){
+  //              document.getElementById('women-button').classList.remove('right');
+                    document.getElementById('women-button').classList.add('right');
+                    document.getElementById('men-button').classList.remove('left');
+            }
+            else{
+//                document.getElementById('women-button').classList.add('right');
+            }   
+        }
+    </script>
+    
+</body>
+
+</html>
