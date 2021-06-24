@@ -168,6 +168,12 @@ border-radius: 50%;
   }
  
   @media only screen and (max-width: 800px) {
+      .product-search{
+          display: none;
+      }
+      .gender-selection{
+          display: none;
+      }
     .box-content{
         flex-direction: column;
     }
