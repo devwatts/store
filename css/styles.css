@@ -7,10 +7,10 @@
 }
 
 body {
-    background: #f46b45;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #a18cd1, #fbc2eb);  /* Chrome 10-25, Safari 5.1-6 */
-background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-
+  
+    background: #56CCF2;  /* fallback for old browsers */
+   
+    
 }
 
 a {
