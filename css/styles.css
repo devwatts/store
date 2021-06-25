@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #56CCF2;  /* fallback for old browsers */
+    background: #1bbdf3;  /* fallback for old browsers */
 }
 
 a {
@@ -44,7 +44,9 @@ display: none;
 .navlink-container {
     padding: 20px;
 }
-
+.navlink-container a{
+    color: white;
+}
 .nav-link {
     font-weight: 600;
     letter-spacing: 2px;
@@ -201,24 +203,15 @@ border-radius: 50%;
     .product-search{
         margin: 0;
     }
-    .nav-links li:not(:first-child){
+    .nav-links {
         display: none;
     }
-  }
- 
-  @media only screen and (max-width: 800px) {
-      .logo-container{
-          display: flex;
-          justify-content: space-between;
-      }
-      .logo{
-          text-align: left;
-      }
-    .nav-links{
-        display: none;
+    .logo-container{
+        display: flex;
+        justify-content: space-between;
     }
     .nav-links-mobile{
-        display: inline-block;
+        display: block;
     }
     .navlink-container a{
         background-color: white;
@@ -226,6 +219,20 @@ border-radius: 50%;
         letter-spacing: normal;
           padding: 8px;
     }
+    .navlink-container a{
+        color: black;
+    }
+  }
+ 
+  @media only screen and (max-width: 800px) {
+      
+      .logo{
+          text-align: left;
+      }
+    .nav-links{
+        display: none;
+    }
+ 
     .navlink-container{
         padding: 10px;
     }
