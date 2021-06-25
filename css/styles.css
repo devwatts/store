@@ -90,7 +90,7 @@ ul {
 .right{
     color: white;
     transition: linear 0.5s;
-    box-shadow: inset 400px 0 0 0 #252525,0 0 2px #252525 !important;
+    box-shadow: inset -400px 0 0 0 #252525,0 0 2px #252525 !important;
     
 }
 .content-wrapper{
