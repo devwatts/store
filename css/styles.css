@@ -38,7 +38,9 @@ ul {
 .logo {
     letter-spacing: 8px;
 }
-
+.nav-links-mobile{
+display: none;
+}
 .navlink-container {
     padding: 20px;
 }
@@ -205,13 +207,28 @@ border-radius: 50%;
   }
  
   @media only screen and (max-width: 800px) {
-      .navlink-container a{
-          background-color: white;
-          border-radius: 50px;
-          letter-spacing: normal;
-            padding: 10px;
+      .logo-container{
+          display: flex;
+          justify-content: space-between;
       }
-    
+      .logo{
+          text-align: left;
+      }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        display: inline-block;
+    }
+    .navlink-container a{
+        background-color: white;
+        border-radius: 10px;
+        letter-spacing: normal;
+          padding: 8px;
+    }
+    .navlink-container{
+        padding: 10px;
+    }
       .logo-container{
           padding: 10px;
       }
