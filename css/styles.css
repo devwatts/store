@@ -209,6 +209,7 @@ border-radius: 50%;
     
 }
 @media only screen and (max-width: 1018px) {
+    
     .nav-bar{
         flex-direction: column;
     }
@@ -236,6 +237,9 @@ border-radius: 50%;
     }
     .navlink-container a{
         color: black;
+    }
+    .box-mini:hover{
+        transform: scale(1);
     }
   }
  
