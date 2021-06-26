@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #1bbdf3;  /* fallback for old browsers */
+    background: #6190E8;  /* fallback for old browsers */
 }
 
 a {
@@ -36,6 +36,7 @@ ul {
 }
 
 .logo {
+    color: white;
     letter-spacing: 8px;
 }
 .nav-links-mobile{
@@ -45,12 +46,15 @@ display: none;
     padding: 20px;
 }
 .navlink-container a{
-    color: white;
+    color: black;
 }
 .nav-link {
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: white;
 }
 .gender-selection{
     padding: 20px;
@@ -58,6 +62,7 @@ display: none;
     
 }
 .gender-selection button{
+    cursor:pointer;
     background-color: white;
     height: 40px;
     width: 90px;
@@ -113,10 +118,11 @@ display: none;
     }
     .side-bar a{
         padding: 10px;
+        color: white;
     }
    .sidebar-offer{
         display: flex;
-        background-color: white;
+        background-color: rgb(255, 255, 255,0.70);
         text-align: center;
         border-radius: 10px;
         flex-direction: column;
@@ -141,23 +147,23 @@ display: none;
     margin-top: 2%;
 }
 .box-half{
-    background-color: white;
+    background-color: rgb(255, 255, 255,0.70);
     width: 49%;
     border-radius: 10px;
     padding: 20px;
 }
 .box-full{
-    background-color: white;
+    background-color: rgb(255, 255, 255,0.70);
     width: 100%;
     border-radius: 10px;
     padding: 20px; 
 }
 .box-mini{
     width: 24%;
-    background-color: white;
+    background-color: rgb(255, 255, 255,0.70);
     border-radius: 10px;
     padding: 20px; 
-    transition: transform linear 0.5s;
+    transition: transform linear 0.1s;
 }
 .article-container{
     display: flex;
@@ -192,6 +198,15 @@ border-radius: 50%;
     
     align-self: flex-start;
     margin-left: 5%;
+}
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.70);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
 }
 @media only screen and (max-width: 1018px) {
     .nav-bar{
