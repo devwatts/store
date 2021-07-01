@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #6190E8;  /* fallback for old browsers */
+    background: #21d190;  /* fallback for old browsers */
 }
 
 a {
@@ -65,7 +65,7 @@ display: none;
     cursor:pointer;
     background-color: white;
     height: 40px;
-    width: 90px;
+    width: 110px;
     border: none;
     border-radius: 10px;
     transition: linear 1s;
